@@ -1,0 +1,14 @@
+﻿<Window x:Class="Template.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:viewmodels="clr-namespace:Template.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Title="Mein erstes Fenster" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+        <Label x:Name="lbl_Name" Content="Beschriftung" HorizontalAlignment="Center" Margin="0,0,0,10" FontStyle="Oblique" FontSize="15" VerticalAlignment="Center"/>
+            <Button x:Name="btn_FirstButton" Content="{Binding Path=Text}" HorizontalAlignment="Center" Command="{Binding Path=LoadCommand}" Height="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
