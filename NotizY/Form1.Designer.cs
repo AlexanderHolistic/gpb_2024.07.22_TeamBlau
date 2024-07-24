@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< .merge_file_vjSLkM
             btn_loeschen = new Button();
             btn_info = new Button();
             btn_editieren = new Button();
             btn_hinzufuegen = new Button();
             btnSuchen = new Button();
+            contentPanel = new Panel();
+            inhaltTextBox = new TextBox();
+            ueberschriftTextBox = new TextBox();
+            contentPanel.SuspendLayout();
             SuspendLayout();
             // 
             // btn_loeschen
             // 
-            btn_loeschen.Location = new Point(667, 146);
+            btn_loeschen.Location = new Point(654, 27);
             btn_loeschen.Name = "btn_loeschen";
             btn_loeschen.Size = new Size(75, 23);
             btn_loeschen.TabIndex = 0;
@@ -47,7 +50,7 @@
             // 
             // btn_info
             // 
-            btn_info.Location = new Point(574, 146);
+            btn_info.Location = new Point(561, 27);
             btn_info.Name = "btn_info";
             btn_info.Size = new Size(75, 23);
             btn_info.TabIndex = 1;
@@ -56,7 +59,7 @@
             // 
             // btn_editieren
             // 
-            btn_editieren.Location = new Point(393, 146);
+            btn_editieren.Location = new Point(380, 27);
             btn_editieren.Name = "btn_editieren";
             btn_editieren.Size = new Size(75, 23);
             btn_editieren.TabIndex = 2;
@@ -65,7 +68,7 @@
             // 
             // btn_hinzufuegen
             // 
-            btn_hinzufuegen.Location = new Point(485, 146);
+            btn_hinzufuegen.Location = new Point(472, 27);
             btn_hinzufuegen.Name = "btn_hinzufuegen";
             btn_hinzufuegen.Size = new Size(83, 23);
             btn_hinzufuegen.TabIndex = 3;
@@ -74,18 +77,12 @@
             // 
             // btnSuchen
             // 
-            btnSuchen.Location = new Point(289, 146);
+            btnSuchen.Location = new Point(276, 27);
             btnSuchen.Name = "btnSuchen";
             btnSuchen.Size = new Size(75, 23);
             btnSuchen.TabIndex = 4;
             btnSuchen.Text = "Suchen";
             btnSuchen.UseVisualStyleBackColor = true;
-=======
-            contentPanel = new Panel();
-            inhaltTextBox = new TextBox();
-            ueberschriftTextBox = new TextBox();
-            contentPanel.SuspendLayout();
-            SuspendLayout();
             // 
             // contentPanel
             // 
@@ -118,43 +115,34 @@
             ueberschriftTextBox.Size = new Size(557, 71);
             ueberschriftTextBox.TabIndex = 0;
             ueberschriftTextBox.TextAlign = HorizontalAlignment.Center;
->>>>>>> .merge_file_apwkUf
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-<<<<<<< .merge_file_vjSLkM
             Controls.Add(btnSuchen);
             Controls.Add(btn_hinzufuegen);
             Controls.Add(btn_editieren);
             Controls.Add(btn_info);
             Controls.Add(btn_loeschen);
-            Name = "Form1";
-            Text = "Form1";
-=======
             Controls.Add(contentPanel);
             Name = "Form1";
             Text = "Form1";
             contentPanel.ResumeLayout(false);
             contentPanel.PerformLayout();
->>>>>>> .merge_file_apwkUf
             ResumeLayout(false);
         }
 
         #endregion
 
-<<<<<<< .merge_file_vjSLkM
         private Button btn_loeschen;
         private Button btn_info;
         private Button btn_editieren;
         private Button btn_hinzufuegen;
         private Button btnSuchen;
-=======
         private Panel contentPanel;
         private TextBox ueberschriftTextBox;
         private TextBox inhaltTextBox;
->>>>>>> .merge_file_apwkUf
     }
 }
