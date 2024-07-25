@@ -51,9 +51,9 @@ namespace NotizY
             // 
             btn_loeschen.BackgroundImage = (Image)resources.GetObject("btn_loeschen.BackgroundImage");
             btn_loeschen.BackgroundImageLayout = ImageLayout.Stretch;
-            btn_loeschen.Location = new Point(725, 16);
+            btn_loeschen.Location = new Point(759, 27);
             btn_loeschen.Name = "btn_loeschen";
-            btn_loeschen.Size = new Size(41, 40);
+            btn_loeschen.Size = new Size(29, 29);
             btn_loeschen.TabIndex = 0;
             btn_loeschen.UseVisualStyleBackColor = true;
             // 
@@ -61,9 +61,9 @@ namespace NotizY
             // 
             btn_info.BackgroundImage = (Image)resources.GetObject("btn_info.BackgroundImage");
             btn_info.BackgroundImageLayout = ImageLayout.Stretch;
-            btn_info.Location = new Point(667, 16);
+            btn_info.Location = new Point(725, 27);
             btn_info.Name = "btn_info";
-            btn_info.Size = new Size(41, 40);
+            btn_info.Size = new Size(28, 29);
             btn_info.TabIndex = 1;
             btn_info.UseVisualStyleBackColor = true;
             // 
@@ -71,9 +71,9 @@ namespace NotizY
             // 
             btn_hinzufuegen.BackgroundImage = (Image)resources.GetObject("btn_hinzufuegen.BackgroundImage");
             btn_hinzufuegen.BackgroundImageLayout = ImageLayout.Stretch;
-            btn_hinzufuegen.Location = new Point(606, 16);
+            btn_hinzufuegen.Location = new Point(691, 27);
             btn_hinzufuegen.Name = "btn_hinzufuegen";
-            btn_hinzufuegen.Size = new Size(41, 40);
+            btn_hinzufuegen.Size = new Size(28, 29);
             btn_hinzufuegen.TabIndex = 3;
             btn_hinzufuegen.UseVisualStyleBackColor = true;
             // 
@@ -119,6 +119,7 @@ namespace NotizY
             panel1.Name = "panel1";
             panel1.Size = new Size(191, 100);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -127,9 +128,9 @@ namespace NotizY
             label1.ForeColor = Color.White;
             label1.Location = new Point(64, 6);
             label1.Name = "label1";
-            label1.Size = new Size(62, 21);
+            label1.Size = new Size(64, 21);
             label1.TabIndex = 1;
-            label1.Text = "Notizes";
+            label1.Text = "Notizen";
             // 
             // panel2
             // 
@@ -137,25 +138,6 @@ namespace NotizY
             panel2.Name = "panel2";
             panel2.Size = new Size(197, 44);
             panel2.TabIndex = 2;
-
-
-
-
-
-            //rounded Textbox
-            roundedTextBox.BackColor = Color.White;
-           // roundedTextBox.BorderStyle = BorderStyle.None;
-            roundedTextBox.Font = new Font("Segoe UI", 12F);
-            roundedTextBox.Location = new Point(73, 103);
-           // roundedTextBox.Multiline = false;
-            roundedTextBox.Name = "roundedTextBox";
-            roundedTextBox.Size = new Size(305, 27);
-            roundedTextBox.TabIndex = 7;
-
-
-
-
-
             // 
             // Sidebar
             // 
@@ -163,7 +145,7 @@ namespace NotizY
             Sidebar.Controls.Add(panel1);
             Sidebar.Controls.Add(listBox1);
             Sidebar.Dock = DockStyle.Left;
-            Sidebar.Location = new Point(0, 0);
+            Sidebar.Location = new Point(3, 64);
             Sidebar.MaximumSize = new Size(200, 450);
             Sidebar.MinimumSize = new Size(47, 450);
             Sidebar.Name = "Sidebar";

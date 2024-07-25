@@ -3,7 +3,7 @@ using NotizY.Objects;
 
 namespace NotizY
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         bool saved = false;
         Note activeNote;
@@ -56,6 +56,9 @@ namespace NotizY
             updateTextBoxes();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
