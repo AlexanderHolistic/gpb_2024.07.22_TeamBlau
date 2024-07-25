@@ -51,6 +51,7 @@
             contentPanel = new Panel();
             inhaltTextBox = new TextBox();
             ueberschriftTextBox = new TextBox();
+            speicherButton = new Button();
             Sidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)manuButton).BeginInit();
@@ -205,7 +206,7 @@
             // 
             // btn_loeschen
             // 
-            btn_loeschen.Location = new Point(654, 27);
+            btn_loeschen.Location = new Point(710, 27);
             btn_loeschen.Name = "btn_loeschen";
             btn_loeschen.Size = new Size(75, 23);
             btn_loeschen.TabIndex = 0;
@@ -214,7 +215,7 @@
             // 
             // btn_info
             // 
-            btn_info.Location = new Point(561, 27);
+            btn_info.Location = new Point(613, 27);
             btn_info.Name = "btn_info";
             btn_info.Size = new Size(75, 23);
             btn_info.TabIndex = 1;
@@ -223,7 +224,7 @@
             // 
             // btn_editieren
             // 
-            btn_editieren.Location = new Point(380, 27);
+            btn_editieren.Location = new Point(419, 27);
             btn_editieren.Name = "btn_editieren";
             btn_editieren.Size = new Size(75, 23);
             btn_editieren.TabIndex = 2;
@@ -232,16 +233,16 @@
             // 
             // btn_hinzufuegen
             // 
-            btn_hinzufuegen.Location = new Point(472, 27);
+            btn_hinzufuegen.Location = new Point(516, 27);
             btn_hinzufuegen.Name = "btn_hinzufuegen";
-            btn_hinzufuegen.Size = new Size(83, 23);
+            btn_hinzufuegen.Size = new Size(75, 23);
             btn_hinzufuegen.TabIndex = 3;
             btn_hinzufuegen.Text = "Hinzufügen";
             btn_hinzufuegen.UseVisualStyleBackColor = true;
             // 
             // btnSuchen
             // 
-            btnSuchen.Location = new Point(276, 27);
+            btnSuchen.Location = new Point(322, 27);
             btnSuchen.Name = "btnSuchen";
             btnSuchen.Size = new Size(75, 23);
             btnSuchen.TabIndex = 4;
@@ -267,6 +268,7 @@
             inhaltTextBox.ScrollBars = ScrollBars.Vertical;
             inhaltTextBox.Size = new Size(557, 291);
             inhaltTextBox.TabIndex = 1;
+            inhaltTextBox.TextChanged += inhaltTextBox_TextChanged;
             // 
             // ueberschriftTextBox
             // 
@@ -279,12 +281,24 @@
             ueberschriftTextBox.Size = new Size(557, 71);
             ueberschriftTextBox.TabIndex = 0;
             ueberschriftTextBox.TextAlign = HorizontalAlignment.Center;
+            ueberschriftTextBox.TextChanged += ueberschriftTextBox_TextChanged;
+            // 
+            // speicherButton
+            // 
+            speicherButton.Location = new Point(225, 27);
+            speicherButton.Name = "speicherButton";
+            speicherButton.Size = new Size(75, 23);
+            speicherButton.TabIndex = 5;
+            speicherButton.Text = "Speichern";
+            speicherButton.UseVisualStyleBackColor = true;
+            speicherButton.Click += speicherButton_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(speicherButton);
             Controls.Add(btnSuchen);
             Controls.Add(btn_hinzufuegen);
             Controls.Add(btn_editieren);
@@ -341,5 +355,6 @@
             BackColor = Color.White,
             ForeColor = Color.Black
         };
+        private Button speicherButton;
     }
 }

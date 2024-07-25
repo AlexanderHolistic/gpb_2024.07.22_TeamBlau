@@ -17,6 +17,10 @@ namespace NotizY.Objects
         {
             try
             {
+                if (!File.Exists(path))
+                {
+                    File.CreateText(path).Close();
+                }
                 noteList.Clear();
                 using(StreamReader sr = new StreamReader(path))
                 {
