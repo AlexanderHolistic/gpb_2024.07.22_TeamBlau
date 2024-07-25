@@ -30,6 +30,15 @@ namespace NotizY.Objects
             this.group = objects[3];
         }
 
+        public Note()
+        {
+            this.title = string.Empty;
+            this.content = string.Empty;
+            this.favourit = false;
+            this.group = string.Empty;
+
+        }
+
         public override string ToString()
         {
             return title;

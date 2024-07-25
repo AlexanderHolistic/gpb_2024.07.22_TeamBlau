@@ -76,6 +76,7 @@ namespace NotizY
             btn_hinzufuegen.Size = new Size(28, 29);
             btn_hinzufuegen.TabIndex = 3;
             btn_hinzufuegen.UseVisualStyleBackColor = true;
+            btn_hinzufuegen.Click += btn_hinzufuegen_Click;
             // 
             // contentPanel
             // 
@@ -119,7 +120,6 @@ namespace NotizY
             panel1.Name = "panel1";
             panel1.Size = new Size(191, 100);
             panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -158,8 +158,9 @@ namespace NotizY
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(3, 109);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(191, 319);
+            listBox1.Size = new Size(191, 274);
             listBox1.TabIndex = 2;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged_1;
             // 
             // Form1
             // 
