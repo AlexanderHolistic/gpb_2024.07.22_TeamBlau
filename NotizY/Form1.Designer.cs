@@ -239,6 +239,7 @@
             btn_hinzufuegen.TabIndex = 3;
             btn_hinzufuegen.Text = "Hinzufügen";
             btn_hinzufuegen.UseVisualStyleBackColor = true;
+            btn_hinzufuegen.Click += btn_hinzufuegen_Click;
             // 
             // btnSuchen
             // 

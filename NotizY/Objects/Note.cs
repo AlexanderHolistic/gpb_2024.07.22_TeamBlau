@@ -21,6 +21,14 @@ namespace NotizY.Objects
             this.group = group != null ? group : string.Empty;
         }
 
+        public Note()
+        {
+            this.title = string.Empty;
+            this.content = string.Empty;
+            this.favourit = false;
+            this.group = string.Empty;
+        }
+
         public Note(string csvString)
         {
             string[] objects = csvString.Split(';');

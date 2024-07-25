@@ -13,7 +13,7 @@ namespace NotizY
         {
             InitializeComponent();
             file.loadNotes(notes);
-            activeNote = notes.Count > 0 ? notes[0] : new Note("", "", false, string.Empty);
+            activeNote = notes.Count > 0 ? notes[0] : new Note();
             updateTextBoxes();
         }
 
@@ -41,7 +41,7 @@ namespace NotizY
             activeNote.content = inhaltTextBox.Text;
         }
 
-        private void speicherButton_Click(object sender, EventArgs e)
+        private void saveCurrentNote()
         {
             if (!saved)
             {
@@ -52,7 +52,35 @@ namespace NotizY
                     saved = true;
                 }
             }
+        }
+
+        private void speicherButton_Click(object sender, EventArgs e)
+        {
+            saveCurrentNote();
             updateTextBoxes();
+        }
+
+        private bool checkSavedMsgBox()
+        {
+            if (!saved)
+            {
+                DialogResult res = MessageBox.Show("Sicher das sie fortfahren wollen?\ndie letzen Änderungen gehen verloren.", "Warunung", MessageBoxButtons.YesNo);
+                if (res == DialogResult.No)
+                    return false;
+                else
+                    return true;
+            }
+            else
+                return true;
+        }
+
+        private void btn_hinzufuegen_Click(object sender, EventArgs e)
+        {
+            if (checkSavedMsgBox())
+            {
+                activeNote = new Note();
+                updateTextBoxes();
+            }
         }
     }
 }
