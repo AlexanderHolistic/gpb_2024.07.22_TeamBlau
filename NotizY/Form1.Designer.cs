@@ -1,4 +1,6 @@
-﻿namespace NotizY
+﻿using System.Windows.Forms;
+
+namespace NotizY
 {
     partial class Form1
     {
@@ -28,180 +30,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Sidebar = new FlowLayoutPanel();
-            panel1 = new Panel();
-            label1 = new Label();
-            manuButton = new PictureBox();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            button1 = new Button();
-            panel4 = new Panel();
-            button2 = new Button();
-            panel5 = new Panel();
-            button3 = new Button();
-            panel6 = new Panel();
-            button4 = new Button();
-            sidebarTimer = new System.Windows.Forms.Timer(components);
             btn_loeschen = new Button();
             btn_info = new Button();
             btn_hinzufuegen = new Button();
-            btnSuchen = new Button();
             contentPanel = new Panel();
             inhaltTextBox = new TextBox();
             ueberschriftTextBox = new TextBox();
-            Sidebar.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)manuButton).BeginInit();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel2 = new Panel();
+            Sidebar = new FlowLayoutPanel();
+            listBox1 = new ListBox();
             contentPanel.SuspendLayout();
+            panel1.SuspendLayout();
+            Sidebar.SuspendLayout();
             SuspendLayout();
-            // 
-            // Sidebar
-            // 
-            Sidebar.BackColor = SystemColors.ActiveCaption;
-            Sidebar.Controls.Add(panel1);
-            Sidebar.Controls.Add(panel3);
-            Sidebar.Controls.Add(panel4);
-            Sidebar.Controls.Add(panel5);
-            Sidebar.Controls.Add(panel6);
-            Sidebar.Dock = DockStyle.Left;
-            Sidebar.Location = new Point(0, 0);
-            Sidebar.MaximumSize = new Size(200, 450);
-            Sidebar.MinimumSize = new Size(42, 450);
-            Sidebar.Name = "Sidebar";
-            Sidebar.Size = new Size(200, 450);
-            Sidebar.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(manuButton);
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(197, 100);
-            panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(124, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 21);
-            label1.TabIndex = 1;
-            label1.Text = "Menu";
-            // 
-            // manuButton
-            // 
-            manuButton.Cursor = Cursors.Hand;
-            manuButton.Location = new Point(3, 18);
-            manuButton.Name = "manuButton";
-            manuButton.Size = new Size(37, 50);
-            manuButton.SizeMode = PictureBoxSizeMode.StretchImage;
-            manuButton.TabIndex = 1;
-            manuButton.TabStop = false;
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(0, 97);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(197, 44);
-            panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(button1);
-            panel3.Location = new Point(3, 109);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(192, 52);
-            panel3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(-12, -13);
-            button1.Name = "button1";
-            button1.Size = new Size(218, 79);
-            button1.TabIndex = 1;
-            button1.Text = "          Home";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(button2);
-            panel4.Location = new Point(3, 167);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(192, 52);
-            panel4.TabIndex = 3;
-            // 
-            // button2
-            // 
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(-12, -13);
-            button2.Name = "button2";
-            button2.Size = new Size(218, 79);
-            button2.TabIndex = 1;
-            button2.Text = "          Settings";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(button3);
-            panel5.Location = new Point(3, 225);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(192, 52);
-            panel5.TabIndex = 4;
-            // 
-            // button3
-            // 
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(-12, -13);
-            button3.Name = "button3";
-            button3.Size = new Size(218, 79);
-            button3.TabIndex = 1;
-            button3.Text = "          Help";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(button4);
-            panel6.Location = new Point(3, 283);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(192, 52);
-            panel6.TabIndex = 5;
-            // 
-            // button4
-            // 
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(-12, -13);
-            button4.Name = "button4";
-            button4.Size = new Size(218, 79);
-            button4.TabIndex = 1;
-            button4.Text = "          About";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // sidebarTimer
-            // 
-            sidebarTimer.Interval = 10;
             // 
             // btn_loeschen
             // 
@@ -232,14 +76,6 @@
             btn_hinzufuegen.Size = new Size(41, 40);
             btn_hinzufuegen.TabIndex = 3;
             btn_hinzufuegen.UseVisualStyleBackColor = true;
-            // 
-            // btnSuchen
-            // 
-            btnSuchen.Location = new Point(330, 25);
-            btnSuchen.Name = "btnSuchen";
-            btnSuchen.Size = new Size(75, 23);
-            btnSuchen.TabIndex = 4;
-            btnSuchen.UseVisualStyleBackColor = true;
             // 
             // contentPanel
             // 
@@ -275,56 +111,106 @@
             ueberschriftTextBox.TextAlign = HorizontalAlignment.Center;
             ueberschriftTextBox.TextChanged += ueberschriftTextBox_TextChanged;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(191, 100);
+            panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(64, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 21);
+            label1.TabIndex = 1;
+            label1.Text = "Notizes";
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(0, 97);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(197, 44);
+            panel2.TabIndex = 2;
+
+
+
+
+
+            //rounded Textbox
+            roundedTextBox.BackColor = Color.White;
+           // roundedTextBox.BorderStyle = BorderStyle.None;
+            roundedTextBox.Font = new Font("Segoe UI", 12F);
+            roundedTextBox.Location = new Point(73, 103);
+           // roundedTextBox.Multiline = false;
+            roundedTextBox.Name = "roundedTextBox";
+            roundedTextBox.Size = new Size(305, 27);
+            roundedTextBox.TabIndex = 7;
+
+
+
+
+
+            // 
+            // Sidebar
+            // 
+            Sidebar.BackColor = Color.DimGray;
+            Sidebar.Controls.Add(panel1);
+            Sidebar.Controls.Add(listBox1);
+            Sidebar.Dock = DockStyle.Left;
+            Sidebar.Location = new Point(0, 0);
+            Sidebar.MaximumSize = new Size(200, 450);
+            Sidebar.MinimumSize = new Size(47, 450);
+            Sidebar.Name = "Sidebar";
+            Sidebar.Size = new Size(200, 450);
+            Sidebar.TabIndex = 9;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(3, 109);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(191, 319);
+            listBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSuchen);
             Controls.Add(btn_hinzufuegen);
             Controls.Add(btn_info);
+            Controls.Add(Sidebar);
             Controls.Add(btn_loeschen);
             Controls.Add(contentPanel);
-            Controls.Add(Sidebar);
             Name = "Form1";
             Text = "Form1";
-            Sidebar.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)manuButton).EndInit();
-            panel3.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel6.ResumeLayout(false);
             contentPanel.ResumeLayout(false);
             contentPanel.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            Sidebar.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btn_loeschen;
+        private Panel panel1;
+        private Panel panel2;
+        private Label label1;
+        private FlowLayoutPanel Sidebar;
         private Button btn_info;
         private Button btn_hinzufuegen;
-        private Button btnSuchen;
         private Panel contentPanel;
         private TextBox ueberschriftTextBox;
         private TextBox inhaltTextBox;
-
-        private FlowLayoutPanel Sidebar;
-        private Panel panel1;
-        private Panel panel2;
-        private Button button1;
-        private Panel panel3;
-        private Panel panel4;
-        private Button button2;
-        private Panel panel5;
-        private Button button3;
-        private Panel panel6;
-        private Button button4;
-        private Label label1;
-        private PictureBox manuButton;
-        private System.Windows.Forms.Timer sidebarTimer;
         private RoundedTextBox roundedTextBox = new RoundedTextBox
         {
             Location = new Point(20, 20),
@@ -334,5 +220,8 @@
             BackColor = Color.White,
             ForeColor = Color.Black
         };
+        private ListBox listBox1;
+
+
     }
 }

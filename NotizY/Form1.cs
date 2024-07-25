@@ -9,6 +9,7 @@ namespace NotizY
         Note activeNote;
         NoteFile file = new NoteFile("user_notes.csv");
         List<Note> notes = new List<Note>();
+
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +55,7 @@ namespace NotizY
             }
             updateTextBoxes();
         }
+
 
     }
 }

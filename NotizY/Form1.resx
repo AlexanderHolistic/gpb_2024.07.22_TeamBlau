@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sidebarTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_loeschen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -130,7 +127,7 @@
         lx1LuF84nLJsyQ/MlDileEOxlV0zf+6pXti0ZE8nlC6zkxjjTDKFhsEaK2TJE5HVFsUlLvvRKv4O3z8l
         LkNcK5jiGGUVC933o/7gd7duuq+3lNQUhfpnz3vvguA2FAue93XkecVjqH2CS7vsXz2EwQ/RC2UtfAAt
         m3B+VdaMHbjYgrbHnO7ovlQrM5BOw9upfNMstN5A43ypt599Tu4hKV1NXMPePnRnJHuhyrsbKnv784zf
-        H9FvtQFywYVw08cAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAHdElNRQfoBxkJAQ8vh+AVAAAAGXRFWHRD
+        H9FvtQFywYVw08cAAAAJcEhZcwAADr0AAA69AUf7kK0AAAAHdElNRQfoBxkJAQ8vh+AVAAAAGXRFWHRD
         b21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAWZBJREFUeF7t3QmUXNWd53lq6arq6pk5XdVnzpzp
         nq5ZXJ7uadecKbtcLRdIgFhsbDDGLgNGQrsssSOhhUUgzL5vZhEGCWFjI8BiFwi0gQSSAGHMqhW05BL7
         vq/5n3efXiQp6Rorkrg34kV+P+f8TkSGIuPdF5GR75dPN947QgAAAAAcNgo0AAAA0AQKNAAAANAECjQA
@@ -525,7 +522,7 @@
         lx1LuF84nLJsyQ/MlDileEOxlV0zf+6pXti0ZE8nlC6zkxjjTDKFhsEaK2TJE5HVFsUlLvvRKv4O3z8l
         LkNcK5jiGGUVC933o/7gd7duuq+3lNQUhfpnz3vvguA2FAue93XkecVjqH2CS7vsXz2EwQ/RC2UtfAAt
         m3B+VdaMHbjYgrbHnO7ovlQrM5BOw9upfNMstN5A43ypt599Tu4hKV1NXMPePnRnJHuhyrsbKnv784zf
-        H9FvtQFywYVw08cAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAHdElNRQfoBxkJARnbU1VEAAAAGXRFWHRD
+        H9FvtQFywYVw08cAAAAJcEhZcwAADr0AAA69AUf7kK0AAAAHdElNRQfoBxkJARnbU1VEAAAAGXRFWHRD
         b21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAU2NJREFUeF7t3Vt25Ei2tVc1TV1Tw92PMhiMCjK4
         cDUDYJc5x/jepSxiAb7/U1n/z/8BAAAAQMMcsAAAAABomgMWAAAAAE1zwAIAAACgaQ5YAAAAADTNAQsA
         AACApjlgAQAAANA0BywAAAAAmuaABQAAAEDTHLAAAAAAaJoDFgAAAABNc8ACAAAAoGkOWAAAAAA0zQEL
@@ -888,7 +885,7 @@
   <data name="btn_hinzufuegen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJEAAACRCAYAAADD2FojAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAET1JREFUeF7tnYlXFFfaxr+/aDTusi+KsiiIZtSciTkmUSYqNDRrA24x6kRNvpxv
+        vQAADr0BR/uQrQAAET1JREFUeF7tnYlXFFfaxr+/aDTusi+KsiiIZtSciTkmUSYqNDRrA24x6kRNvpxv
         4g6IMV9MYhwFZDEsLkA3jYJsLhFFQLZG6GZplm5onnlvdWNQm0W7aiapus85z+nq6uq6dat+595bt27d
         93/AxeWiOERcLotDxOWyOERcLotDxOWyOEQzaWICsNnsn1zTikM0VQSL1WxGb3MzHty+jcqsLJT/+CN0
         ly6hJi8PrdX3YO7ohG10lIM1RRwiJgJirM+I1vIylB09iuptiSgIfR8N61QwrN+Png0HcWvNJuSEhqIw
